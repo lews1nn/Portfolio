@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Leonardo - 3D</title>
+    <link rel="stylesheet" href="Portfólio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <canvas id="bg3d"></canvas>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Portfólio de Leonardo</div>
+            <ul class="nav-menu">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Leonardo Montesanti De Lima</h1>
+            <p class="hero-subtitle">Desenvolvedor Full-Stack | Python | Engenheiro de Computação</p>
+            <div class="hero-buttons">
+                <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+                <a href="#contato" class="btn btn-secondary">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="sobre" class="section">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <div class="sobre-content">
+                <div class="sobre-texto">
+                    <p>Meu nome é Leonardo, desde pequeno gostei de tecnologia e sempre sonhei em um dia criar novas tecnologias (hardware e software).</p>
+                    <p>Fiz faculdade de Engenharia da Computação na USP e decidi seguir na área da programação.</p>
+                </div>
+                <div class="skills">
+                    <h3>Habilidades</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">Three.js</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">AWS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="section">
+        <div class="container">
+            <h2>Projetos</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-tilt>
+                    <div class="project-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Calculadora Interativa</h3>
+                    <p>Uma calculadora com operações básicas e avançadas. Além de possuir os seguintes recursos:</p>
+                    <ul>
+                        <li>Registro automático de todas as operações no histórico</li>
+                        <li>Função de memória para armazenar valores</li>
+                        <li>Tratamento de erros (como divisão por zero)</li>
+                        <li>Interface interativa com menu</li>
+                        <li>Possibilidade de visualizar e limpar o histórico</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-small"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" class="btn btn-small btn-outline"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-tilt>
+                    <div class="project-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Jogo da Cobrinha</h3>
+                    <p>Implementação clássica do jogo Snake com recursos modernos:</p>
+                    <ul>
+                        <li>Controles suaves e responsivos</li>
+                        <li>Sistema de pontuação em tempo real</li>
+                        <li>Diferentes níveis de dificuldade</li>
+                        <li>Efeitos visuais e sonoros</li>
+                        <li>Modo multiplayer local</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-small"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" class="btn btn-small btn-outline"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-tilt>
+                    <div class="project-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>E-commerce Site</h3>
+                    <p>Site de e-commerce completo desenvolvido com Flask:</p>
+                    <ul>
+                        <li>Catálogo de produtos dinâmico</li>
+                        <li>Sistema de carrinho de compras</li>
+                        <li>Autenticação de usuários</li>
+                        <li>Painel administrativo</li>
+                        <li>Design responsivo e moderno</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-small"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" class="btn btn-small btn-outline"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-tilt>
+                    <div class="project-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Jogo de Adivinhação</h3>
+                    <p>Jogo inteligente de adivinhação com IA:</p>
+                    <ul>
+                        <li>Algoritmo de busca binária otimizado</li>
+                        <li>Interface intuitiva e amigável</li>
+                        <li>Estatísticas de jogo</li>
+                        <li>Múltiplos modos de jogo</li>
+                        <li>Sistema de dicas inteligentes</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-small"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" class="btn btn-small btn-outline"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section">
+        <div class="container">
+            <h2>Contato</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:leonardomontesantidelima@gmail.com">leonardomontesantidelima@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com" target="_blank">GitHub</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="#" target="_blank">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Leonardo Montesanti De Lima. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="Portfólio.js"></script>
+</body>
+</html>
